@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-left,
+.container-right {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects for phone, email, and links */
+.container-left a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.container-left a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.container-left {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.container-left img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#uploadButton {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#uploadButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.upload-btn {
+    margin: 10px 0;
+}
+
+.container-left h2,
+.container-left h3 {
+    margin: 10px 0;
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+.container-right {
+    flex: 2;
+    max-width: 800px;
+}
+
+.container-right h3 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.container-right p,
+.container-right table {
+    margin: 10px 0;
+}
+
+.container-right table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container-right table,
+.container-right th,
+.container-right td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.container-right th {
+    background-color: #f2f2f2;
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#scrollToTopButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .container-left,
+    .container-right {
+        max-width: 100%;
+    }
+}
